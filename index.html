@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #FFE5B4; /* Set background color of the page */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        .center-container {
+            width: 400px; /* Adjust width as needed */
+            height: 200px; /* Adjust height as needed */
+            background-image: image('imageveed.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid black;
+            border-radius: 20px;
+            cursor: pointer; /* Change cursor to pointer when hovering over the container */
+        }
+
+        .small-container {
+            width: 200px; /* Adjust width as needed */
+            height: 100px; /* Adjust height as needed */
+            background-color: #FFFFFF; /* Set background color */
+            border: 1px solid black;
+            border-radius: 10px;
+            position: absolute;
+            top: calc(50% + 150px); /* Position below the center container */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer; /* Change cursor to pointer when hovering over the container */
+        }
+
+        .small-container2 {
+            width: 200px; /* Adjust width as needed */
+            height: 100px; /* Adjust height as needed */
+            background-color: #FFFFFF; /* Set background color */
+            border: 1px solid black;
+            border-radius: 10px;
+            position: absolute;
+            top: calc(50% + 280px); /* Position below the second small container */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer; /* Change cursor to pointer when hovering over the container */
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .center-container {
+                width: 70%; /* Adjust width for smaller screens */
+                height: 50%; /* Adjust height for smaller screens */
+                max-width: 400px; /* Limit maximum width */
+                max-height: 200px; /* Limit maximum height */
+                border-radius: 10px; /* Adjust border radius for smaller screens */
+            }
+
+            .small-container {
+                width: 70%; /* Adjust width for smaller screens */
+                height: 50px;
+                background-color: #B4CEFF; /* Set background color */
+                border: 1px solid black; /* Adjust height for smaller screens */
+                top: calc(50% + 110px); /* Position below the center container for smaller screens */
+            }
+
+            .small-container2 {
+                width: 70%; /* Adjust width for smaller screens */
+                height: 50px;
+                background-color: #B4CEFF; /* Set background color */
+                border: 1px solid black; /* Adjust height for smaller screens */
+                top: calc(50% + 190px); /* Position below the second small container for smaller screens */
+            }
+
+            h1 {
+                font-size: 20px; /* Adjust font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Details</h1>
+    <a href="https://maps.app.goo.gl/nNX9ixuqKQPhEQth9" target="_blank" rel="noopener noreferrer">
+        <div class="center-container"></div>
+    </a>
+    <div class="small-container" onclick="window.location.href='/call_contact1'">Contact 1</div>
+    <div class="small-container2" onclick="window.location.href='/call_contact2'">Contact 2</div>
+</body>
+</html>
