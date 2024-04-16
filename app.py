@@ -16,5 +16,4 @@ def call_contact2():
     phone_number = '9447354934'  # Phone number for Contact 2
     return f'<script>window.location.href = "tel:{phone_number}";</script>'
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
