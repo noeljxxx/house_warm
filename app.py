@@ -17,4 +17,4 @@ def call_contact2():
     return f'<script>window.location.href = "tel:{phone_number}";</script>'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
