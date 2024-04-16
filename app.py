@@ -8,13 +8,13 @@ def index():
 
 @app.route('/call_contact1')
 def call_contact1():
-    phone_number = '9645951639'  # Phone number for Contact 1
+    phone_number = '+919447354934'  # Phone number for Contact 1
     return f'<script>window.location.href = "tel:{phone_number}";</script>'
 
 @app.route('/call_contact2')
 def call_contact2():
-    phone_number = '9447354934'  # Phone number for Contact 2
+    phone_number = '+918086188851'  # Phone number for Contact 2
     return f'<script>window.location.href = "tel:{phone_number}";</script>'
 
-#if __name__ == '__main__':
+if __name__ == '__main__':
     app.run(debug=True)
