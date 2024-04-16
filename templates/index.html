@@ -14,7 +14,7 @@
         .center-container {
             width: 400px; /* Adjust width as needed */
             height: 200px; /* Adjust height as needed */
-            background-image: image('imageveed.png');
+            background-image: url('https://cdn.confident-group.com/wp-content/uploads/2018/02/23155503/COVER-Importance-Of-Location-In-Real-Estate.jpg');
             background-size: cover;
             background-position: center;
             position: absolute;
@@ -25,6 +25,16 @@
             border-radius: 20px;
             cursor: pointer; /* Change cursor to pointer when hovering over the container */
         }
+
+        .map-text {
+    position: absolute;
+    bottom: 5px; /* Adjust vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 20px; /* Adjust font size */
+    color: rgb(255, 255, 255); /* Text color */
+    font-weight: bold; /* Make the text bold */
+}
 
         .small-container {
             width: 200px; /* Adjust width as needed */
@@ -96,7 +106,9 @@
 <body>
     <h1>Contact Details</h1>
     <a href="https://maps.app.goo.gl/nNX9ixuqKQPhEQth9" target="_blank" rel="noopener noreferrer">
-        <div class="center-container"></div>
+        <div class="center-container">
+            <div class="map-text">Google Map</div>
+        </div>
     </a>
     <div class="small-container" onclick="window.location.href='/call_contact1'">Contact 1</div>
     <div class="small-container2" onclick="window.location.href='/call_contact2'">Contact 2</div>
